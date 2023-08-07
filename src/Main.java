@@ -54,7 +54,9 @@ public class Main {
         }
         displayList();
         int deletedItem = SafeInput.getRangedInt(in,"What do you want to delete?",1, list.size()) - 1;
-            System.out.println(deletedItem + " removed");
+        list.remove(deletedItem);
+        int listedItem = deletedItem + 1;
+        System.out.println(listedItem + " removed");
         }
 
     private static void addItem() {
